@@ -16,6 +16,8 @@
         android:layout_marginTop="0dp"
         tools:srcCompat="@tools:sample/avatars" />
 
+
+
     <TextView
         android:id="@+id/tvScreenName"
         android:layout_width="wrap_content"
@@ -34,7 +36,19 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
-        tools:text="This is my tweet!!" />
+        tools:text="This is my tweet!!"
+        android:autoLink="all"
+        android:linksClickable="true"/>
 
-    
+    <TextView
+        android:id="@+id/timeformat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="4dp"
+        tools:text="0:00" />
+
+
 </RelativeLayout>
